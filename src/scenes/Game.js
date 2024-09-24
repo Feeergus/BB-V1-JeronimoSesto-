@@ -1,6 +1,6 @@
-import { Scene } from 'phaser';
+//import { Scene } from 'phaser';
 
-export class Game extends Scene
+export class Game extends Phaser.Scene
 {
     constructor ()
     {
@@ -9,9 +9,9 @@ export class Game extends Scene
 
     preload ()
     {
-        this.load.image("ball", "../assets/bola.png")
-        this.load.image("paddle", "../assets/brick.png")
-        this.load.image("blocks", "../assets/brick.png")
+        this.load.image("ball", "../public/assets/bola.png")
+        this.load.image("paddle", "../public/assets/brick.png")
+        this.load.image("blocks", "../public/assets/brick.png")
     }
 
     create() {
